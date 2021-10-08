@@ -4,6 +4,9 @@
 }
 
 .navBarContent ul li{
-    color: white;
     list-style-type: none;
+}
+.navBarContent ul li a{
+    color: white;
+    text-decoration: unset;
 }
