@@ -1,0 +1,13 @@
+.MainBox{
+  display: grid;
+  width: 1000px;
+
+  grid-template-areas: 
+  "header header"
+  "navbar profile";
+
+  grid-template-rows: 1fr 10fr;
+  grid-template-columns: 2fr 10fr;
+
+  gap: 10px;
+}

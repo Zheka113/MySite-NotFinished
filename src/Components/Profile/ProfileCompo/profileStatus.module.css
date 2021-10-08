@@ -1,0 +1,22 @@
+.ProfileStatus{
+    display: grid;
+
+    grid-template-areas: 
+    "mainImg mainImg"
+    "logoImg posts";
+
+    grid-template-rows: 110px 1fr;
+    grid-template-columns: 2fr 10fr;
+}
+
+.MainImage{
+    grid-area: mainImg;
+    width: 100%;
+    height: 110px;
+}
+.LogoImage{
+    grid-area: logoImg;
+    width: 100px;
+    border-radius: 35px;
+    margin-top: 10px;
+}

@@ -1,0 +1,10 @@
+.HeaderContent{
+    grid-area: header;
+    background-color: crimson;
+}
+
+.HeaderContent img{
+  margin: 5px;
+  width: 60px;
+  border-radius: 40px;
+}

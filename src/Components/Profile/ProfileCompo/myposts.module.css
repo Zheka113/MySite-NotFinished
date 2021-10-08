@@ -1,0 +1,17 @@
+.Posts{
+    grid-area: posts;
+}
+
+.Posts textarea{
+    background-color: rgb(27, 44, 20);
+    color: yellow;
+    width: 85%;
+    height: 60px;
+    resize: unset;
+}
+
+.Posts button{
+    width: 10%;
+    margin-right: 15%;
+    margin-left: 75%;
+}

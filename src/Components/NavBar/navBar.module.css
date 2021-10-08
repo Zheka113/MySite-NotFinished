@@ -1,0 +1,9 @@
+.NavBarContent{
+    background-color: crimson;
+    grid-area: navbar;
+}
+
+.NavBarContent div{
+    color: white;
+    margin: 5px;
+}
