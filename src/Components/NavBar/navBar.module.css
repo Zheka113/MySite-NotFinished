@@ -1,9 +1,9 @@
-.NavBarContent{
+.navBarContent{
     background-color: crimson;
     grid-area: navbar;
 }
 
-.NavBarContent div{
+.navBarContent ul li{
     color: white;
-    margin: 5px;
+    list-style-type: none;
 }

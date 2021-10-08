@@ -1,9 +1,9 @@
-.HeaderContent{
+.headerContent{
     grid-area: header;
     background-color: crimson;
 }
 
-.HeaderContent img{
+.headerContent img{
   margin: 5px;
   width: 60px;
   border-radius: 40px;

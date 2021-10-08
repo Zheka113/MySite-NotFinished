@@ -1,4 +1,4 @@
-.ProfileStatus{
+.profileStatus{
     display: grid;
 
     grid-template-areas: 
@@ -9,12 +9,12 @@
     grid-template-columns: 2fr 10fr;
 }
 
-.MainImage{
+.mainImage{
     grid-area: mainImg;
     width: 100%;
     height: 110px;
 }
-.LogoImage{
+.logoImage{
     grid-area: logoImg;
     width: 100px;
     border-radius: 35px;

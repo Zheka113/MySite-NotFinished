@@ -1,12 +1,12 @@
 import React from 'react';
-import ProfileStyles from './profile.module.css';
+import profileStyles from './profile.module.css';
 import ProfileStatus from './ProfileCompo/ProfileStatus';
 import MyPosts from './ProfileCompo/MyPosts';
 import Post from './ProfileCompo/PostClone';
 
 const ProfileContent = () => {
     return (
-        <div className={ProfileStyles.ProfileContent}>
+        <div className={profileStyles.profileContent}>
             <ProfileStatus />
             <MyPosts />
             <div>

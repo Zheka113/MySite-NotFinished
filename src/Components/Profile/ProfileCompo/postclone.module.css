@@ -1,31 +1,29 @@
-.Post{
+.post{
     display: grid;
     border: 2px solid gray;
     border-radius: 20px;
     margin-top: 3px;
   
     grid-template-areas: 
-    "comlog comtxt"
-    "comlog like";
+    "comlog commment";
   
-    grid-template-rows: 25px 25px   ;
+    grid-template-rows: 50px   ;
     grid-template-columns: 50px 1fr;
     
     gap: 5px;
   }
 
-.CommentText{
-    grid-area: comtxt;
+.comment{
+    grid-area: commment;
+}
+.commentText{
     height: 25px;
 }  
-.CommentLogo{
+.commentLogo{
     margin: 2px;
     width: 50px;
     grid-area: comlog;
 }
-.Like{
-    grid-area: like;
-}
-.Like img{
+.like img{
     width: 20px;
 }

@@ -4,9 +4,9 @@ import HeaderContent from './Components/Header/Header';
 import NavBarContent from './Components/NavBar/NavBar';
 import ProfileContent from './Components/Profile/Profile';
 
-function App(props) {
+function App({header,navbar,profile}) {
   return (
-    <div className="MainBox">
+    <div className="mainBox">
       <HeaderContent />
       <NavBarContent />
       <ProfileContent />

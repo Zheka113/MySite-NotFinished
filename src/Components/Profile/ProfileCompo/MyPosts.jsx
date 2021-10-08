@@ -1,9 +1,9 @@
 import React from 'react';
-import PostsStyle from './myposts.module.css';
+import postsStyle from './myposts.module.css';
 
 const MyPosts = () => {
     return (
-        <div className={PostsStyle.Posts}>
+        <div className={postsStyle.posts}>
                 <h3>My Posts</h3>
                 <textarea name="your news" id=""></textarea>
                 <br/>

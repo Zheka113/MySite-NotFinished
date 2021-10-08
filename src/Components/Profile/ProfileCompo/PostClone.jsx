@@ -1,12 +1,14 @@
 import React from 'react';
-import PostStyle from './postclone.module.css'
+import postStyle from './postclone.module.css'
 
-const Post = (props) => {
+const Post = ({ text, like }) => {
     return (
-        <div className={PostStyle.Post}>
-            <img src="https://www.clipartmax.com/png/full/35-352579_spotify-logo-logo-spotify.png" className={PostStyle.CommentLogo}/>
-            <div className={PostStyle.CommentText}>{props.text}</div>
-            <div className={PostStyle.Like}><img src="https://avatanplus.com/files/resources/original/57bdd5703bb81156bd89be75.png"/>{props.like}</div>
+        <div className={postStyle.post}>
+            <img src="https://www.clipartmax.com/png/full/35-352579_spotify-logo-logo-spotify.png" className={postStyle.commentLogo} />
+            <div className={postStyle.comment}>
+                <div className={postStyle.commentText}>{text}</div>
+                <div className={postStyle.like}><img src="https://avatanplus.com/files/resources/original/57bdd5703bb81156bd89be75.png" />{like}</div>
+            </div>
         </div>
     );
 }

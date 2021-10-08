@@ -1,8 +1,8 @@
-.Posts{
+.posts{
     grid-area: posts;
 }
 
-.Posts textarea{
+.posts textarea{
     background-color: rgb(27, 44, 20);
     color: yellow;
     width: 85%;
@@ -10,7 +10,7 @@
     resize: unset;
 }
 
-.Posts button{
+.posts button{
     width: 10%;
     margin-right: 15%;
     margin-left: 75%;
