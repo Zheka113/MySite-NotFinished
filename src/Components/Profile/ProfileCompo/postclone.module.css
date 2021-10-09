@@ -3,26 +3,26 @@
     border: 2px solid gray;
     border-radius: 20px;
     margin-top: 3px;
-  
+/*   
     grid-template-areas: 
     "comlog commment";
   
-    grid-template-rows: 50px   ;
+    grid-template-rows: 50px   ; */
     grid-template-columns: 50px 1fr;
     
     gap: 5px;
   }
 
-.comment{
+/* .comment{
     grid-area: commment;
 }
 .commentText{
     height: 25px;
-}  
+}   */
 .commentLogo{
     margin: 2px;
     width: 45px;
-    grid-area: comlog;
+    /* grid-area: comlog; */
 }
 .like img{
     width: 20px;
