@@ -1,0 +1,13 @@
+.messagesContent{
+    display: grid;
+    grid-template-columns: 1fr 1px 3fr;
+    gap: 15px;
+}
+
+.greenLine{
+    border: 2px solid gray;
+    height: 100%;
+    width: 0px;
+    position: relative;
+    margin-left: 30%;
+}

@@ -5,7 +5,7 @@ const MyPosts = () => {
     return (
         <div className={postsStyle.posts}>
                 <h3>My Posts</h3>
-                <textarea name="your news" id=""></textarea>
+                <textarea></textarea>
                 <br/>
                 <button>Send</button>
         </div>

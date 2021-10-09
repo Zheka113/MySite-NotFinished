@@ -6,12 +6,12 @@ const NavBarContent = () => {
         <nav className={navBarStyles.navBarContent}>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="/ProfileContent">
                         Profile 
                     </a>
                </li>
                <li>
-                    <a href="#">
+                    <a href="/MessagesContent">
                         Messeges 
                     </a>
                </li>

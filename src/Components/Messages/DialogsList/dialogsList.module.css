@@ -1,0 +1,11 @@
+.dialogsList h3{
+    margin: 0px;
+}
+
+.dialogsList li{
+    margin-top: 15px;
+}
+.dialogsList li a{
+    text-decoration: none;
+    color: black;
+}
