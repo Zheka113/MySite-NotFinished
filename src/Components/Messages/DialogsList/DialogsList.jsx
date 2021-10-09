@@ -35,7 +35,9 @@ const DialogsList = () => {
                 </li>
                 <li>
                     <a href="#">
-                        Victor
+                        <h3>
+                            Victor
+                        </h3>
                     </a>
                 </li>
             </ul>

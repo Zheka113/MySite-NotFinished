@@ -12,8 +12,8 @@ function App({header,navbar,profile}) {
     <div className="mainBox">
       <HeaderContent />
       <NavBarContent />
-      <Route path='/ProfileContent' component={ProfileContent} />
-      <Route path='/MessagesContent' component={MessagesContent} />
+      <Route path='/Profile' component={ProfileContent} />
+      <Route path='/Messages' component={MessagesContent} />
       {/* <MessagesContent />
       <ProfileContent /> */}
     </div>

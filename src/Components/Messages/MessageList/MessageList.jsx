@@ -1,10 +1,11 @@
 import React from 'react';
+import CloneMessage from './CloneMessage/CloneMessage';
 import messageList from './messageList.module.css';
 
 const MessageList = () => {
     return (
         <div>
-            Messages
+            <CloneMessage peopleName='nnn' messageContent='ggg' />
         </div>
     );
 }
