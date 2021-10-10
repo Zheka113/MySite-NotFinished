@@ -5,11 +5,11 @@ import styles from './messageList.module.css';
 const AndrewChat = () => {
     return (
         <div>
-            <CloneMessage peopleName='Andrew' messageContent='You have mistakes' imgAdress='https://ae01.alicdn.com/kf/HTB1hoAgHHGYBuNjy0Foq6AiBFXaz/Nirvana.jpg' />
-            <CloneMessage peopleName='Me' messageContent='Where?' imgAdress='https://yt3.ggpht.com/a/AATXAJz6LsMAjJz-rXca0JGr5gtzDxoC9c2yQAmlqGrv0w=s900-c-k-c0xffffffff-no-rj-mo' />
-            <CloneMessage peopleName='Andrew' messageContent='Anywhere' imgAdress='https://ae01.alicdn.com/kf/HTB1hoAgHHGYBuNjy0Foq6AiBFXaz/Nirvana.jpg' />
-            <CloneMessage peopleName='Me' messageContent='&#9785;' imgAdress='https://yt3.ggpht.com/a/AATXAJz6LsMAjJz-rXca0JGr5gtzDxoC9c2yQAmlqGrv0w=s900-c-k-c0xffffffff-no-rj-mo' />
-            <CloneMessage peopleName='Andrew' messageContent='This is a joke))' imgAdress='https://miro.medium.com/max/2400/2*ErHzItrSYBAPV8YjaNY7Mg.jpeg' />
+            <CloneMessage peopleName='Andrew' messageContent='Hello!' imgAdress='https://aiconica.net/previews/odnoklassniki-logo-circle-filled-icon-826.png' />
+            <CloneMessage peopleName='Me' messageContent='Hi. Where are your from?' imgAdress='https://yt3.ggpht.com/a/AATXAJz6LsMAjJz-rXca0JGr5gtzDxoC9c2yQAmlqGrv0w=s900-c-k-c0xffffffff-no-rj-mo' />
+            <CloneMessage peopleName='Andrew' messageContent="I'm from your code))" imgAdress='https://aiconica.net/previews/odnoklassniki-logo-circle-filled-icon-826.png' />
+            <CloneMessage peopleName='Me' messageContent='Bot...' imgAdress='https://yt3.ggpht.com/a/AATXAJz6LsMAjJz-rXca0JGr5gtzDxoC9c2yQAmlqGrv0w=s900-c-k-c0xffffffff-no-rj-mo' />
+            <CloneMessage peopleName='Andrew' messageContent='&#128557;' imgAdress='https://aiconica.net/previews/odnoklassniki-logo-circle-filled-icon-826.png' />
         </div>
     );
 }

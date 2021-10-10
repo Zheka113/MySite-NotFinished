@@ -36,9 +36,7 @@ const DialogsList = () => {
                 </li>
                 <li>
                     <NavLink to='/Messages/Victor' activeClassName={style.activeLink} >
-                        <h3>
-                            Victor
-                        </h3>
+                        Victor
                     </NavLink>
                 </li>
             </ul>

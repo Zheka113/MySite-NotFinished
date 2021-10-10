@@ -15,7 +15,7 @@ const ProfileStatus = () => {
                 <br/>
                 Education: Magistracy
                 <br/>
-                Web Site (VK): <NavLink to="https://vk.com/id232757194" activeClassName={style.activeLink}>https://vk.com/id232757194</NavLink>
+                Web Site (VK): <a href="https://vk.com/id232757194">https://vk.com/id232757194</a>
             </div>
         </div>
     );
