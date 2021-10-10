@@ -5,7 +5,7 @@
 }
 
 .greenLine{
-    border: 2px solid gray;
+    border: 2px solid red;
     height: 100%;
     width: 0px;
     position: relative;

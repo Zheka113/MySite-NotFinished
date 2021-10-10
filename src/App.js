@@ -6,17 +6,17 @@ import MessagesContent from './Components/Messages/Messages';
 import NavBarContent from './Components/NavBar/NavBar';
 import ProfileContent from './Components/Profile/Profile';
 
-function App({header,navbar,profile}) {
+function App({ header, navbar, profile }) {
   return (
     <BrowserRouter>
-    <div className="mainBox">
-      <HeaderContent />
-      <NavBarContent />
-      <Route path='/Profile' component={ProfileContent} />
-      <Route path='/Messages' component={MessagesContent} />
-      {/* <MessagesContent />
-      <ProfileContent /> */}
-    </div>
+      <div className="mainBox">
+        <HeaderContent />
+        <NavBarContent />
+        <div className='routedContent'>
+          <Route path='/Profile' component={ProfileContent} />
+          <Route path='/Messages' component={MessagesContent} />
+        </div>
+      </div>
     </BrowserRouter>
   );
 }

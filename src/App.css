@@ -4,10 +4,14 @@
 
   grid-template-areas: 
   "header header"
-  "navbar profile";
+  "navbar routedcont";
 
   grid-template-rows: 1fr 10fr;
   grid-template-columns: 2fr 10fr;
 
   gap: 10px;
+}
+
+.routedContent{
+  grid-area: routedcont;
 }

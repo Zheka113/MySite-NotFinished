@@ -1,8 +1,8 @@
 body {
   border-radius: 10px;
   border-width: 10px;
-  border-color: crimson;
   display: flex;
   justify-content: center;
   margin: 55px;
+  background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1614337633_92-p-kartinki-svetlii-fon-95.jpg');
 }

@@ -1,3 +1,23 @@
 .CloneMessage{
-    background-color: brown;
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 10px;
+    margin: 35px;
+}
+
+.CloneMessage h3{
+    margin: 0px;
+}
+.CloneMessage h4{
+    margin: 6px;
+    font-style : oblique;
+}
+.CloneMessage div{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: darkgreen;
+}
+.CloneMessage img{
+    width: 65px;
+    border-radius: 40px;
 }

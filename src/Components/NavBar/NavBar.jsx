@@ -7,30 +7,40 @@ const NavBarContent = () => {
             <ul>
                 <li>
                     <a href="/Profile">
-                        Profile 
+                        <h3>
+                            Profile
+                        </h3>
                     </a>
-               </li>
-               <li>
+                </li>
+                <li>
                     <a href="/Messages">
-                        Messeges 
+                        <h3>
+                            Messeges
+                        </h3>
                     </a>
-               </li>
-               <li>
+                </li>
+                <li>
                     <a href="#">
-                        News 
+                        <h3>
+                            News
+                        </h3>
                     </a>
-               </li>
-               <li>
+                </li>
+                <li>
                     <a href="#">
-                        Music 
+                        <h3>
+                            Music
+                        </h3>
                     </a>
-               </li>
-               <br/>
-               <li>
+                </li>
+                <br />
+                <li>
                     <a href="#">
-                        Settings 
+                        <h3>
+                            Settings
+                        </h3>
                     </a>
-               </li>
+                </li>
             </ul>
         </nav>
     );

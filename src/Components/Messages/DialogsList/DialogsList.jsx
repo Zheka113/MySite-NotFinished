@@ -4,9 +4,9 @@ import dialogsListStyle from './dialogsList.module.css';
 const DialogsList = () => {
     return (
         <div className={dialogsListStyle.dialogsList}>
-            <h3>
+            <h2>
                 DialogsList
-            </h3>
+            </h2>
             <ul>
                 <li>
                     <a href="#">
