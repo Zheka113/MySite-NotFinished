@@ -1,11 +1,12 @@
 import React from 'react';
-import profileStatusStyle from './profileStatus.module.css';
+import { NavLink } from 'react-router-dom';
+import style from './profileStatus.module.css';
 
 const ProfileStatus = () => {
     return (
-        <div className={profileStatusStyle.profileStatus}>
-            <img src='https://phonoteka.org/uploads/posts/2021-04/1619063961_2-phonoteka_org-p-dlinnie-kartinki-dlya-fona-2.jpg' className={profileStatusStyle.mainImage} />
-            <img src='https://yt3.ggpht.com/a/AATXAJz6LsMAjJz-rXca0JGr5gtzDxoC9c2yQAmlqGrv0w=s900-c-k-c0xffffffff-no-rj-mo' className={profileStatusStyle.logoImage}  />
+        <div className={style.profileStatus}>
+            <img src='https://phonoteka.org/uploads/posts/2021-04/1619063961_2-phonoteka_org-p-dlinnie-kartinki-dlya-fona-2.jpg' className={style.mainImage} />
+            <img src='https://yt3.ggpht.com/a/AATXAJz6LsMAjJz-rXca0JGr5gtzDxoC9c2yQAmlqGrv0w=s900-c-k-c0xffffffff-no-rj-mo' className={style.logoImage}  />
             <div>
                 <h2>Evgeniy S.</h2>
                 Date of Birth: 29 of November
@@ -14,7 +15,7 @@ const ProfileStatus = () => {
                 <br/>
                 Education: Magistracy
                 <br/>
-                Web Site (VK): <a href="https://vk.com/id232757194">https://vk.com/id232757194</a>
+                Web Site (VK): <NavLink to="https://vk.com/id232757194" activeClassName={style.activeLink}>https://vk.com/id232757194</NavLink>
             </div>
         </div>
     );

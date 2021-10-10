@@ -10,3 +10,7 @@
     color: white;
     text-decoration: unset;
 }
+
+.activeLink h3{
+    color: gold;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import cloneMessageStyle from './cloneMessage.module.css';
+import styles from './cloneMessage.module.css';
 
 const CloneMessage = ({ peopleName, messageContent, imgAdress }) => {
     return (
-        <div className={cloneMessageStyle.CloneMessage}>
+        <div className={styles.CloneMessage}>
             <img src={imgAdress} />
             <span>
                 <h3>{peopleName}</h3>

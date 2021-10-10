@@ -1,44 +1,45 @@
 import React from 'react';
-import dialogsListStyle from './dialogsList.module.css';
+import { NavLink } from 'react-router-dom';
+import style from './dialogsList.module.css';
 
 const DialogsList = () => {
     return (
-        <div className={dialogsListStyle.dialogsList}>
+        <div className={style.dialogsList}>
             <h2>
                 DialogsList
             </h2>
             <ul>
                 <li>
-                    <a href="#">
+                    <NavLink to='/Messages/Andrew' activeClassName={style.activeLink} >
                         Andrew
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="#">
+                    <NavLink to='/Messages/Dmitry' activeClassName={style.activeLink} >
                         Dmitry
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="#">
+                    <NavLink to='/Messages/Sasha' activeClassName={style.activeLink} >
                         Sasha
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="#">
+                    <NavLink to='/Messages/Sveta' activeClassName={style.activeLink} >
                         Sveta
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="#">
+                    <NavLink to='/Messages/Valera' activeClassName={style.activeLink} >
                         Valera
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="#">
+                    <NavLink to='/Messages/Victor' activeClassName={style.activeLink} >
                         <h3>
                             Victor
                         </h3>
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
         </div>
