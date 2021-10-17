@@ -12,12 +12,19 @@ import Post from './ProfileCompo/PostClone';
 //     {text:'Belive me', like:"0"}
 // ]
 
-
+//В комментах под видео человек написал:
+//"В 2021 году можно так:
+//<Route exact path="/profile">
+//         <Profile />
+//</Route>
+//
+//Ну и через child func"
+//Обьяснишь?
 
 const ProfileContent = ({postData}) => {
 
     let posts = postData.map( p => <Post text={p.text} like={p.like} /> );
-    
+
     return (
         <div className={styles.profileContent}>
             <ProfileStatus />
