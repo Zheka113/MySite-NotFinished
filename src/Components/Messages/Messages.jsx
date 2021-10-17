@@ -1,9 +1,9 @@
 import React from 'react';
+import styles from './messages.module.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import DialogsList from './DialogsList/DialogsList';
 import VictorChat from './MessageList/ChatWithVictor/ChatWithVictor';
 import AndrewChat from './MessageList/ChatWithAndrew/ChatWithAndrew';
-import styles from './messages.module.css';
 import SashaChat from './MessageList/ChatWithSasha/ChatWithSasha';
 import DmitryChat from './MessageList/ChatWithDmitry/ChatWithDmitry';
 import SvetaChat from './MessageList/ChatWithSveta/ChatWithSveta';

@@ -4,17 +4,26 @@ import ProfileStatus from './ProfileCompo/ProfileStatus';
 import MyPosts from './ProfileCompo/MyPosts';
 import Post from './ProfileCompo/PostClone';
 
-const ProfileContent = () => {
+// let postData = [
+//     {text:'My first post', like:"5"},
+//     {text:'Do you like music?', like:"7"},
+//     {text:'It is a logo by Sportify', like:"15"},
+//     {text:'I can better', like:"9"},
+//     {text:'Belive me', like:"0"}
+// ]
+
+
+
+const ProfileContent = ({postData}) => {
+
+    let posts = postData.map( p => <Post text={p.text} like={p.like} /> );
+    
     return (
         <div className={styles.profileContent}>
             <ProfileStatus />
             <MyPosts />
             <div>
-                <Post text='My first post' like="5" />
-                <Post text='Do you like music?' like="7" />
-                <Post text='It is a logo by Sportify' like="15" />
-                <Post text='I can better' like="9" />
-                <Post text='Belive me' like="0" />
+                { posts }
             </div>
         </div>
     );

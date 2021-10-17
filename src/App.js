@@ -6,15 +6,15 @@ import MessagesContent from './Components/Messages/Messages';
 import NavBarContent from './Components/NavBar/NavBar';
 import ProfileContent from './Components/Profile/Profile';
 
-function App({ header, navbar, profile }) {
+function App({ header, navbar, profile, postData }) {
   return (
     <BrowserRouter>
       <div className="mainBox">
         <HeaderContent />
         <NavBarContent />
         <div className='routedContent'>
-          <Route path='/Profile' component={ProfileContent} />
-          <Route path='/Messages' component={MessagesContent} />
+          <Route path='/Profile' render={()=><ProfileContent postData={postData}/>} />
+          <Route path='/Messages' render={MessagesContent} />
         </div>
       </div>
     </BrowserRouter>
