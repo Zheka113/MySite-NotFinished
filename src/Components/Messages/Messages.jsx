@@ -9,19 +9,19 @@ import DmitryChat from './MessageList/ChatWithDmitry/ChatWithDmitry';
 import SvetaChat from './MessageList/ChatWithSveta/ChatWithSveta';
 import ValeraChat from './MessageList/ChatWithValera/ChatWithSveta';
 
-const MessagesContent = () => {
+const MessagesContent = ({messagesData}) => {
     return (
         <BrowserRouter>
         <div className={styles.messagesContent}>
             <div><DialogsList/></div>
             <div className={styles.greenLine}></div>
             <div>
-                <Route path='/Messages/Andrew' component={AndrewChat} />
-                <Route path='/Messages/Dmitry' component={DmitryChat} />
-                <Route path='/Messages/Sasha' component={SashaChat} />
-                <Route path='/Messages/Sveta' component={SvetaChat} />
-                <Route path='/Messages/Valera' component={ValeraChat} />
-                <Route path='/Messages/Victor' component={VictorChat} />
+                <Route path='/Messages/Andrew' render={()=><AndrewChat AndrewChatData={messagesData.AndrewChatData} />} />
+                <Route path='/Messages/Dmitry' render={()=><DmitryChat DmitryChatData={messagesData.DmitryChatData} />} />
+                <Route path='/Messages/Sasha' render={()=><SashaChat SashaChatData={messagesData.SashaChatData} />} />
+                <Route path='/Messages/Sveta' render={()=><SvetaChat SvetaChatData={messagesData.SvetaChatData} />} />
+                <Route path='/Messages/Valera' render={()=><ValeraChat ValeraChatData={messagesData.ValeraChatData} />} />
+                <Route path='/Messages/Victor' render={()=><VictorChat VictorChatData={messagesData.VictorChatData} />} />
             </div>
         </div>
         </BrowserRouter>
