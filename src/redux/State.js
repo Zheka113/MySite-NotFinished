@@ -145,4 +145,9 @@ let state = {
     }
 }
 
+export let newPost = (textMassege) => {
+    let post = {text:textMassege, like:0}
+    state.postData.push(post)
+}
+
 export default state

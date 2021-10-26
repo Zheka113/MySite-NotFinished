@@ -13,14 +13,14 @@ import Post from './ProfileCompo/PostClone';
 //Ну и через child func"
 //Обьяснишь?
 
-const ProfileContent = ({postData}) => {
+const ProfileContent = ({postData, newPost}) => {
 
     let posts = postData.map( p => <Post text={p.text} like={p.like} /> );
 
     return (
         <div className={styles.profileContent}>
             <ProfileStatus />
-            <MyPosts />
+            <MyPosts postData={postData} posts={posts} newPost={newPost} />
             <div>
                 { posts }
             </div>
