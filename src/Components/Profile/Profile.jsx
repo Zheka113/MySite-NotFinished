@@ -4,23 +4,18 @@ import ProfileStatus from './ProfileCompo/ProfileStatus';
 import MyPosts from './ProfileCompo/MyPosts';
 import Post from './ProfileCompo/PostClone';
 
-//В комментах под видео человек написал:
-//"В 2021 году можно так:
-//<Route exact path="/profile">
-//         <Profile />
-//</Route>
-//
-//Ну и через child func"
-//Обьяснишь?
-
-const ProfileContent = ({postData, newPost}) => {
+const ProfileContent = ({postData, newPost, newPostText, updatePostText}) => {
 
     let posts = postData.map( p => <Post text={p.text} like={p.like} /> );
 
     return (
         <div className={styles.profileContent}>
             <ProfileStatus />
-            <MyPosts postData={postData} posts={posts} newPost={newPost} />
+            <MyPosts 
+            postData={postData} 
+            newPost={newPost} 
+            newPostText={newPostText} 
+            updatePostText={updatePostText} />
             <div>
                 { posts }
             </div>

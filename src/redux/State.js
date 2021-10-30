@@ -1,11 +1,16 @@
+import { rerenderSite } from "../rerenderSite"
+
 let state = {
-    postData:[
+    profilePage:{
+        postData:[
         {text:'My first post', like:5},
         {text:'Do you like music?', like:7},
         {text:'It is a logo by Sportify', like:15},
         {text:'I can better', like:9},
         {text:'Belive me', like:0}
     ],
+    newPostText:''
+    },
     messagesData:{
         AndrewChatData:[
             {peopleName:'Andrew', 
@@ -145,9 +150,19 @@ let state = {
     }
 }
 
-export let newPost = (textMassege) => {
-    let post = {text:textMassege, like:0}
-    state.postData.push(post)
+export let newPost = () => {
+    if (state.profilePage.newPostText=='') {
+        alert('write smth')
+    } else {
+        let post = {text:state.profilePage.newPostText, like:0}
+        state.profilePage.postData.push(post)
+        rerenderSite()
+    }
+}
+export let updatePostText = (textMassege) => {
+    state.profilePage.newPostText=textMassege;
+    console.log(state.profilePage.newPostText)
+    rerenderSite()
 }
 
 export default state

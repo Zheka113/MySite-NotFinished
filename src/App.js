@@ -7,7 +7,7 @@ import NavBarContent from './Components/NavBar/NavBar';
 import ProfileContent from './Components/Profile/Profile';
 import FirstPage from './Components/FirstPage/FirstPage';
 
-function App({ header, navbar, profile, state, newPost }) {
+function App({ header, navbar, profile, state, newPost, updatePostText }) {
   return (
     <BrowserRouter>
       <div className="mainBox">
@@ -15,7 +15,11 @@ function App({ header, navbar, profile, state, newPost }) {
         <NavBarContent />
         <div className='routedContent'>
           <Route exact path='/' render={()=><FirstPage/>} />
-          <Route path='/Profile' render={()=><ProfileContent postData={state.postData} newPost={newPost}/>} />
+          <Route path='/Profile' render={()=><ProfileContent 
+          postData={state.profilePage.postData} 
+          newPostText={state.profilePage.newPostText} 
+          newPost={newPost}
+          updatePostText={updatePostText}/>} />
           <Route path='/Messages' render={()=><MessagesContent messagesData={state.messagesData}/>} />
         </div>
       </div>
