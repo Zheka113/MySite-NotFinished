@@ -1,4 +1,4 @@
-import { rerenderSite } from "../rerenderSite"
+// import { rerenderSite } from "../index"
 
 let state = {
     profilePage:{
@@ -148,21 +148,27 @@ let state = {
             imgAdress:'https://miro.medium.com/max/2400/2*ErHzItrSYBAPV8YjaNY7Mg.jpeg'}
         ]
     }
+};
+
+let rerenderSite = () => {}
+
+export let rerander = (reranderAll) => {
+    rerenderSite = reranderAll
 }
 
 export let newPost = () => {
-    if (state.profilePage.newPostText=='') {
-        alert('write smth')
+    if (state.profilePage.newPostText==='') {
+        alert('write smth');
     } else {
-        let post = {text:state.profilePage.newPostText, like:0}
-        state.profilePage.postData.push(post)
-        rerenderSite()
+        let post = {text:state.profilePage.newPostText, like:0};
+        state.profilePage.postData.push(post);
+        state.profilePage.newPostText='';
+        rerenderSite();
     }
-}
+};
 export let updatePostText = (textMassege) => {
     state.profilePage.newPostText=textMassege;
-    console.log(state.profilePage.newPostText)
-    rerenderSite()
-}
+    rerenderSite();
+};
 
 export default state

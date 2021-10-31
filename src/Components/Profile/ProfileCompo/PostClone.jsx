@@ -7,7 +7,7 @@ const Post = ({ text, like }) => {
             <img src="https://www.clipartmax.com/png/full/35-352579_spotify-logo-logo-spotify.png" className={postStyle.commentLogo} />
             <div className={postStyle.comment}>
                 <div className={postStyle.commentText}>{text}</div>
-                <div className={postStyle.like}><img src="https://avatanplus.com/files/resources/original/57bdd5703bb81156bd89be75.png" />{like}</div>
+                <div className={postStyle.like}><img src="https://avatanplus.com/files/resources/original/57bdd5703bb81156bd89be75.png" /> {like}</div>
             </div>
         </div>
     );
