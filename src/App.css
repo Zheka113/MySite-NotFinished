@@ -1,6 +1,8 @@
+
 .mainBox{
   display: grid;
-  width: 1000px;
+ 
+
 
   grid-template-areas: 
   "header header"

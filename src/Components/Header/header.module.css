@@ -1,6 +1,7 @@
 .headerContent{
     grid-area: header;
     background-color: crimson;
+    border-radius: 20px;
 }
 
 .headerContent img{

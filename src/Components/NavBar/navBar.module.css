@@ -1,6 +1,7 @@
 .navBarContent{
     background-color: crimson;
     grid-area: navbar;
+    border-radius: 20px;
 }
 
 .navBarContent ul li{

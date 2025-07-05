@@ -1,26 +1,21 @@
 import React from 'react';
 import styles from './messages.module.css';
 import { Route } from 'react-router-dom';
+import Chat from './Chat'
 import DialogsList from './DialogsList/DialogsList';
-import VictorChat from './MessageList/ChatWithVictor/ChatWithVictor';
-import AndrewChat from './MessageList/ChatWithAndrew/ChatWithAndrew';
-import SashaChat from './MessageList/ChatWithSasha/ChatWithSasha';
-import DmitryChat from './MessageList/ChatWithDmitry/ChatWithDmitry';
-import SvetaChat from './MessageList/ChatWithSveta/ChatWithSveta';
-import ValeraChat from './MessageList/ChatWithValera/ChatWithSveta';
+import DefaultPage from './MessageList/Defoult/Defoult';
 
-const MessagesContent = ({messagesData}) => {
+const MessagesContent = ({messagesData}, {dialogsData}) => {
+    const messagesDataArr = messagesData?.map((el, i) => <div key = {i}>
+            <Route path={`/Messages/${el.name}`} render={()=><Chat data={el.data} />} />
+        </div>)
     return (
         <div className={styles.messagesContent}>
-            <div><DialogsList/></div>
+            <div><DialogsList dialogsData = {dialogsData}/></div>
             <div className={styles.greenLine}></div>
             <div>
-                <Route path='/Messages/Andrew' render={()=><AndrewChat AndrewChatData={messagesData.AndrewChatData} />} />
-                <Route path='/Messages/Dmitry' render={()=><DmitryChat DmitryChatData={messagesData.DmitryChatData} />} />
-                <Route path='/Messages/Sasha' render={()=><SashaChat SashaChatData={messagesData.SashaChatData} />} />
-                <Route path='/Messages/Sveta' render={()=><SvetaChat SvetaChatData={messagesData.SvetaChatData} />} />
-                <Route path='/Messages/Valera' render={()=><ValeraChat ValeraChatData={messagesData.ValeraChatData} />} />
-                <Route path='/Messages/Victor' render={()=><VictorChat VictorChatData={messagesData.VictorChatData} />} />
+                <Route exact path='/Messages/' element={<DefaultPage />} />
+                {messagesDataArr}
             </div>
         </div>
     );

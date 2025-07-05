@@ -4,9 +4,9 @@ import ProfileStatus from './ProfileCompo/ProfileStatus';
 import MyPosts from './ProfileCompo/MyPosts';
 import Post from './ProfileCompo/PostClone';
 
-const ProfileContent = ({postData, newPost, newPostText, updatePostText}) => {
+const ProfileContent = ({postData, newPostText, newPost, updatePostText}) => {
 
-    let posts = postData.map( p => <Post text={p.text} like={p.like} /> );
+    let posts = postData.map((p, index) => <Post text={p.text} like={p.like}/> );
 
     return (
         <div className={styles.profileContent}>
